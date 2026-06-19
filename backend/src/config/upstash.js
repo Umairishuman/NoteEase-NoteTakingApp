@@ -3,6 +3,7 @@ import { Redis } from "@upstash/redis";
 import dotenv from "dotenv";
 
 dotenv.config();
+console.log(process.env.UPSTASH_REDIS_REST_URL)
 
 //creatign ratelimiter that allows 10 requrest every 20 seconds
 const rateLimit = new Ratelimit({
